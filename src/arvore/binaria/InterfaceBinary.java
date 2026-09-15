@@ -1,9 +1,14 @@
-package arvore.generica;
+package arvore.binaria;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public interface InterfaceGenericTree {
+public interface InterfaceBinary {
+    Node leftChild(Node node);
+    Node rightChild(Node node);
+    boolean hasLeftChild(Node node);
+    boolean hasRightChild(Node node);
+
     // Metodos genericos
     int size();
     int height(Node node);

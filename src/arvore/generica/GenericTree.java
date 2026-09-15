@@ -137,7 +137,6 @@ public class GenericTree implements InterfaceGenericTree {
         return replacedValue;
     }
 
-    @Override
     public void addChildren(Node node, Object value) {
         Node newNode = new Node(node, value);
         node.addChild(newNode);
